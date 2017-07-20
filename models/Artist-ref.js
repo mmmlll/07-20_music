@@ -58,7 +58,10 @@ var newAlbum = new Album({
 Artist
   .findOne({name: 'justin bieber'})
   .populate('albums')       // albums is the collection in the DB. what does .populate do???
-  .exec({})
+  .exec(function (err, jb) {
+    if (err) throw err
+    console.log(jb)
+  })
 
 var usher = new Artist({
   name: 'Usher',
