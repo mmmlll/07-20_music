@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Create New Album</h1>
+
+    <form action="/albums" method="post">
+      <label>
+        Album Name:
+        <input type="text" name="album[name]">
+      </label><br>
+
+      <label>
+        Genre:
+        <input type="text" name="album[genre]">
+      </label><br>
+
+      <label>
+        Release Year:
+        <input type="tel" name="album[yearRelease]">
+      </label><br>
+
+      <label>
+        Single Title:
+        <input type="text" name="song[name]">
+      </label>
+
+      <button>Create</button>
+    </form>
+  </body>
+</html>
