@@ -6,7 +6,7 @@ const albumSchema = new Schema({
   genre: String,
   yearRelease: Number,
   songs: [{
-    type: Schema.Type.ObjectId,
+    type: Schema.Types.ObjectId,
     ref: 'Song'
   }]
 })
