@@ -1,0 +1,18 @@
+<h1>
+  Album page for: {{ album.name }}
+  <small>({{ album.yearRelease }})</small>
+</h1>
+<small>genre: {{ album.genre }}</small>
+
+<br>
+<br>
+
+<ul>
+  {{#each album.songs as |song|}}
+    <li>{{ song.name }}</li>
+  {{else}}
+    <li>no songs</li>
+  {{/each}}
+</ul>
+
+{{!-- {{ album }} --}}
